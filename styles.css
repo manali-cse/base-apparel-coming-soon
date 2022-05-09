@@ -124,11 +124,14 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     padding:0 160px 30px;
   }
   .ip-grp{
-    padding:0 100px;
+    padding:0 160px;
+  }
+  .error-message{
+    padding:0 180px;
   }
   .email-button{
-      right:100px;
-      left:440px;
+      right:160px;
+      left:380px;
   }
   .promotion-text-col{
     text-align: center;
