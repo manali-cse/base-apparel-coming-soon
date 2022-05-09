@@ -1,0 +1,131 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+  text-align: left;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.desktop-logo{
+  width:30%;
+  height:30%;
+}
+.mobile-logo{
+  display:none;
+}
+.main-card{
+  max-width: 1099px;
+  max-height:600px;
+  border-radius: 0;
+  border:0;
+  box-shadow: 7px 10px 20px grey;
+  margin:75px auto;
+}
+.h-image{
+  width:100%;
+  height:100%;
+}
+.h-mobile-image{
+  display:none;
+}
+.promotion-text-col{
+  background-image: url("images/bg-pattern-desktop.svg"),linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+  background-size:640px 600px;
+  padding:60px 140px 0 130px;
+}
+.promo-headline{
+  margin-top:70px;
+  font-size:48px;
+  letter-spacing: 10px;
+}
+.promo-headline-part-1{
+  color:hsl(0, 36%, 70%);
+  font-weight:lighter;
+}
+.promo-headline-part-2{
+  font-weight:600;
+}
+.promotion-text{
+  color:hsl(0, 36%, 70%);
+  font-size: 14px;
+  margin-top:20px;
+  letter-spacing: -0.3px;
+}
+.ip-grp{
+  padding-top:30px;
+}
+.form-control{
+  background:transparent;
+  font-size:14px;
+  padding-left:24px;
+  padding-top:11px;
+  padding-bottom:11px;
+}
+.form-control-border-error-color{
+  border-color: hsl(0, 93%, 68%);
+}
+.error-image{
+  position:relative;
+  height:25px;
+  right:70px;
+  top:10px;
+}
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color:hsl(0, 80%, 86%) !important;
+}
+.email-button{
+    border:0;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 7px 10px 20px hsl(0, 36%, 70%);
+    position:absolute;
+    right:0;
+}
+.email-button-hover{
+  background: linear-gradient(135deg,  hsl(0, 80%, 86%),  hsl(0, 80%, 86%));
+}
+.button-arrow{
+  padding:6px 15px;
+}
+.error-message{
+  color:hsl(0, 93%, 68%);
+  font-size: 12px;
+  padding-left:24px;
+}
+.hide-error-message{
+  display: none;
+}
+@media(max-width:640px){
+  .mobile-logo{
+    display:block;
+    padding:35px 0 35px 25px;
+    width:35%;
+    height:35%;
+  }
+  .single-row{
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  .main-card{
+    margin:0 auto;
+  }
+  .h-image{
+    display:none;
+  }
+  .h-mobile-image{
+    display:block;
+    width:100%;
+    height:100%;
+  }
+  .desktop-logo{
+    display:none;
+  }
+  .promotion-text-col{
+    text-align: center;
+    background-image: linear-gradient(135deg,hsl(0, 100%, 98%),hsl(0, 100%, 98%));
+    padding:60px 80px 30px;
+  }
+  .promo-headline{
+    margin-top:20px;
+  }
+  .error-message{
+    text-align: left;
+  }
+}
